@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resorts and Details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w.css" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="./image/android-chrome-192x192.png" sizes="198x198" />
+    <script src="https://kit.fontawesome.com/dcd863c3d4.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/destination.js"></script>
+    <script src="./script/dreamy-travels.js"></script>
+
+    <style>
+        .flip-box {
+            background-color: transparent;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-box-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hide-show-class-div">
+
+        <div id="myHeader">
+            <div class="first">
+                <div class="first-image-logo">
+                    <img src="./image/logo.jpeg" alt="">
+                </div>
+                <div class="second">
+                    <ul class="third">
+                        <li><a class="header-a" href="./home.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <span>Home</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./destinations.html">
+                                <div class="fader white-color active">
+                                    <div>
+                                        <i class="fas fa-hotel white-color"></i>
+                                    </div><span>Destinations</span>
+                                </div>
+                            </a> </li>
+                        <li><a class="header-a" href="./packagecustomizer.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-box-open white-color"></i>
+                                    </div><span>Package</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./adventure.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-suitcase-rolling white-color"></i>
+                                    </div><span>Adventure</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./contact.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="far fa-address-book"></i>
+                                    </div><span>Contact</span>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="mobile-bars" onclick="hamburgerMobile()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1>Packages</h1>
+
+            <h2 id="trend"><span>INTER</span>NATIONAL<span>TOUR</span> DESTI<span>NATIONS</span></h2>
+
+            <div class="destination">
+                <div class="div-abv-collapse">
+                    <div id="destination1" class="expand-collpase">
+                        <p><b>Dubai Destination Description</b></p>
+                        <p id="close-open1"><i class="fas fa-chevron-down"></i> </p>
+                    </div>
+                    <div id="img1" class="ds-flex">
+
+                        <div class="container">
+                            <article>
+                                <figcaption>
+                                    <h1>Attractions in Dubai</h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/Burjkhalifadubai850.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2>Burj Khalifa at the top</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/DubaishoppingFestival850.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2>Dubai Shopping Festival</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/Legolanddubai850-1.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2>Legoland Dubai</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/DubaiAquarium550.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2>Dubai Aquarium and Underwater Zoo</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/IMGWorldDubai550.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2>IMG Worlds of Adventure</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1>Activities in Dubai</h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./image/HelicopterRideDubai850.jpg" height="250px" width="250px" ;
+                                            alt="">
+                                        <figcaption> Helicopter Ride </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/HotAirBalloonRideDubai550.jpg" height="250px" width="250px" ;
+                                            alt="">
+                                        <figcaption>Hot Air Balloon Ride</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/DubaiSpa550.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Spa Day</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/SKydivingDubai850.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Sky Diving</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/8410_DubaiAquariumScubaDive850.jpg" height="250px"
+                                            width="250px" ; alt="">
+                                        <figcaption>Scuba Dive</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article>
+                                <figcaption>
+                                    <h1> Shopping in Dubai </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/MeenaBazaar850.jpg" height="250px" width="250px" ;
+                                                        alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Meena Bazar and Textile Souk</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/EmiratesMallDubai850.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Mall of Emirates</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/DubaiSPecies850.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Dubai Spice Souk</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/DubaiMall550.jpg" height="250px" width="250px" ;
+                                                        alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Karama Shopping Center</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/AlFahidiStreet850.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Al Fahidi Street</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Food in Dubai </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./image/TasteinDubai850.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption> Taste of Dubai </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/FoodinDubai850.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Eating</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Night Life in Dubai </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/OpeanTheater850.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Movie Mania</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/relaxbytheskyview.jpg" height="250px"
+                                                        width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Relax by the Skyview</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/Dhowcruise850.jpg" height="250px" width="250px" ;
+                                                        alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Marina Dhow Cruise Dinner</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/StargazeDubai550.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Stargaze</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/DubaiCityWalk850.jpg" height="250px" width="250px"
+                                                        ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Walk around</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="destination">
+                <div class="div-abv-collapse">
+                    <div id="destination2" class="expand-collpase">
+                        <p><b>Maldives Destination Description</b></p>
+                        <p id="close-open2"><i class="fas fa-chevron-down"></i> </p>
+                    </div>
+                    <div id="img2" class="ds-flex">
+
+                        <div class="container">
+                            <article>
+                                <figcaption>
+                                    <h1> Attractions in Maldives </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./image/TheGrandFridayMosque.jpg" height="250px" width="250px" ;
+                                            alt="">
+                                        <figcaption> The Grand Friday Mosque </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/TheTsunamiMonument.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>The Tsunami Monument</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/NationalMuseum.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>National Museum</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/Prophet Birthday.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Prophet Birthday</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/Eid.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Eid</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1>Activities in Maldives</h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="d-flex">
+                                        <div class="column">
+                                            <div class="flip-box">
+                                                <div class="flip-box-inner">
+                                                    <div class="flip-box-front">
+                                                        <img src="./image/UnderwaterScooters.jpg" height="250px"
+                                                            width="250px" ; alt="">
+                                                    </div>
+                                                    <div class="flip-box-back">
+                                                        <h2> Underwater Scooters</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="flip-box">
+                                                <div class="flip-box-inner">
+                                                    <div class="flip-box-front">
+                                                        <img src="./image/Parasailing.jpg" height="250px" width="250px"
+                                                            ; alt="">
+                                                    </div>
+                                                    <div class="flip-box-back">
+                                                        <h2> Parasailing</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="flip-box">
+                                                <div class="flip-box-inner">
+                                                    <div class="flip-box-front">
+                                                        <img src="./image/DolphinSpottingandWhaleSubmarineRides.jpg"
+                                                            height="250px" width="250px" ; alt="">
+                                                    </div>
+                                                    <div class="flip-box-back">
+                                                        <h2> Dolphin Spotting and Whale Submarine Rides</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Shopping in Maldives </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./image/MajeedheeMagu.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption> Majeedhee Magu </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/NalaBoutique.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Nala Boutique</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/MaleLocalMarket.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Male Local Market</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Food in Maldives </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/Ithaa.jpg" height="250px" width="250px" ; alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Ithaa</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/SeasideGrill.jpg" height="250px" width="250px" ;
+                                                        alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Sea side Grill</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="flip-box">
+                                            <div class="flip-box-inner">
+                                                <div class="flip-box-front">
+                                                    <img src="./image/JustVeg.jpg" height="250px" width="250px" ;
+                                                        alt="">
+                                                </div>
+                                                <div class="flip-box-back">
+                                                    <h2> Just Veg</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Night Life in Maldives </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./image/WhiteNightParty.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption> White Night Party </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/NautilusBar.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Nautilus Bar</figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/CrabRacing.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Crab Racing</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Recommended Dubai Holidays Packages </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+
+                                        <img src="./image/DJI_0020_Burj_Al_Arab_SRP.jpg" height="250px" width="250px" ;
+                                            alt="">
+                                        <figcaption> Dubai Fully Loaded - Bogo (Deira Area) - 4 nights 5 days
+                                        </figcaption>
+
+
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/DubaiDhowCruise.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption> Glittering Dubai – 4 nights 5 days</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <figcaption>
+                                    <h1> Recommended Maldives Holidays Packages </h1>
+                                </figcaption>
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="packagecustomizer.html"><img
+                                                src="./image/Thulhagiri_Island_Resort_Spa_SRP.jpg" height="250px"
+                                                width="250px" ; alt=""></a>
+
+                                        <figcaption> Thulhagiri Island Resort and Spa (3N - Standard Deluxe)
+                                        </figcaption>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./image/Kandima2671.jpg" height="250px" width="250px" ; alt="">
+                                        <figcaption>Kandima (Sky Studio) – 4 nights 5 days Nautilus Bar</figcaption>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!----- Delhi and Disney World ---->
+
+
+            <footer class="package-footer">
+                <div class="address-social">
+                    <div class="address">
+                        <p>
+                            <h3>Reach us</h3>
+                            Dreamy Travel<br>
+                            Division No. 18<br>
+                            Saskatchewan<br>
+                            SK S0J 2B0<br>
+                            Canada<br>
+                            <b>Call us today at </b><a href="tel:+14374659957">+14374659957</a><br>
+                            <b>Or mail to </b><a href="mailto:+14374659957">healthrelated@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                                            <div class="social">
+                        <div class="socialapps">
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-facebook"></i> 
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Facebook</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Youtube</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-twitter"></i> 
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Twitter</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Instagram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <div class="show-only-mobile row">
+        <div class="col-10">
+            <div class="link-home"><a class="header-a" href="./home.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span class="span-class-padding">Home</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./destinations.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-box-open white-color"></i>
+                        </div><span class="span-class-padding">Destination</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./packagecustomizer.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-box-open white-color"></i>
+                        </div><span class="span-class-padding">Package</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./adventure.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-suitcase-rolling white-color"></i>
+                        </div><span class="span-class-padding">Adventure</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./contact.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="far fa-address-book"></i>
+                        </div><span class="span-class-padding">Contact</span>
+                    </div>
+                </a></div>
+        </div>
+
+        <div class="close-btn col-2" onclick="clickCloseButton()">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

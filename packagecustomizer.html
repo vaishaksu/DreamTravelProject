@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w.css">
+    <link rel="shortcut icon" type="image/jpg" href="./image/android-chrome-192x192.png" sizes="198x198" />
+
+    <title>Package Customizer</title>
+
+    <link rel="stylesheet" type="text/css" href="css/packagecustomizerstyle.css">
+
+    <link rel="stylesheet" href="bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/w.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/dcd863c3d4.js" crossorigin="anonymous"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.jss"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+
+
+    <script src="script/packagecustomizer.js"></script>
+    <script src="./script/contact-us.js"></script>
+    <script src="./script/dreamy-travels.js"></script>
+
+</head>
+
+<script>
+    if (window.innerWidth > 767) { // other than mobile view
+        window.onscroll = function () {
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        };
+    }
+</script>
+
+<body>
+    <div class="hide-show-class-div">
+
+        <div id="myHeader">
+            <div class="first">
+                <div class="first-image-logo">
+                    <img src="./image/logo.jpeg" alt="">
+                </div>
+                <div class="second">
+                    <ul class="third">
+                        <li><a class="header-a" href="./home.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <span>Home</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./destinations.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-hotel white-color"></i>
+                                    </div><span>Destinations</span>
+                                </div>
+                            </a> </li>
+                        <li><a class="header-a" href="./packagecustomizer.html">
+                                <div class="fader white-color active">
+                                    <div>
+                                        <i class="fas fa-box-open white-color"></i>
+                                    </div><span>Package</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./adventure.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-suitcase-rolling white-color"></i>
+                                    </div><span>Adventure</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./contact.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="far fa-address-book"></i>
+                                    </div><span>Contact</span>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="mobile-bars" onclick="hamburgerMobile()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="packageOffered">
+                <h1 class="packageOfferedHead"> Thulhagiri Island Resort and Spa (3N - Standard Deluxe) </h1>
+                <div class="packageOfferedDescription">
+                    <div id="grid" class="grid">
+
+                        <div id="event1" class="item event">
+                            <div class="item column" style="background-image:url('./image/UnderwaterScooters.jpg');">
+                                <div class="item-content ">
+                                    Underwater Scooters
+                                </div>
+                                <i class=" bottomleft fa fa-trash-o deleteButton" style="font-size:20px;color:red"
+                                    onclick='deleteEvent(this.parentElement.parentElement.id)'></i>
+                                <span class=" bottomright moreButton"
+                                    style="font-size:50px;font-size:20px;color:rgb(20, 18, 18)"
+                                    onclick="openTab('b1');">&rarr;</span>
+                            </div>
+                            <div id="b1" class="containerTab" style="visibility:hidden;background:green">
+                                <span style="font-size: 200%;" onclick="this.parentElement.style.display='none'"
+                                    class="closebtn">&times;</span>
+                                <h2>Underwater Scooters</h2>
+                                <p>Underwater Scooters has been meticulously designed for underwater diving. It turns in
+                                    almost its own length, has a self-contained breathing environment (natural and
+                                    comfortable to breath), and provides excellent visibility and distortion free views.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div id="event2" class="item event">
+                            <div class="item column" style="background-image:url('./image/CrabRacing.jpg');">
+                                <div class="item-content ">
+                                    Crab Racing
+                                </div>
+                                <i class=" bottomleft fa fa-trash-o deleteButton" style="font-size:20px;color:red"
+                                    onclick='deleteEvent(this.parentElement.parentElement.id)'></i>
+
+                                <span class=" bottomright moreButton"
+                                    style="font-size:50px;font-size:20px;color:rgb(20, 18, 18)"
+                                    onclick="openTab('b2');">&rarr;</span>
+                            </div>
+                            <div id="b2" class="containerTab" style="visibility:hidden;background:green">
+                                <span style="font-size: 200%;" onclick="this.parentElement.style.display='none'"
+                                    class="closebtn">&times;</span>
+                                <h2>Crab Racing</h2>
+                                <p> In the evening the locals organised a crab race. On the floor in the sand they drew
+                                    two circles – one big and one smaller inside the big one. Everyone got a crab with a
+                                    number on its shell-house. Then they gathered some crabs and put them in the middle
+                                    of the small circle. The “owners” of the racing crabs were allowed to stand outside
+                                    the bigger circle and cheer for their crabs. Which crab crossed the line of the
+                                    small circle first, won and was qualified for the next round. Everything is free and
+                                    the locals were super friendly.</p>
+                            </div>
+
+                        </div>
+                        <div id="event3" class="item event">
+                            <div class="item column"
+                                style="background-image:url('./image/Snorkelling and sandbank.png');">
+                                <div class="item-content ">
+                                    Snorkelling and sandbank
+                                </div>
+                                <i class=" bottomleft fa fa-trash-o deleteButton" style="font-size:20px;color:red"
+                                    onclick='deleteEvent(this.parentElement.parentElement.id)'></i>
+                                <span class=" bottomright moreButton"
+                                    style="font-size:50px;font-size:20px;color:rgb(20, 18, 18)"
+                                    onclick="openTab('b3');">&rarr;</span>
+                            </div>
+                            <div id="b3" class="containerTab" style="visibility:hidden;background:green">
+                                <span style="font-size: 200%;" onclick="this.parentElement.style.display='none'"
+                                    class="closebtn">&times;</span>
+                                <h2>Snorkelling and sandbank</h2>
+                                <p> In the evening the locals organised a crab race. On the floor in the sand they drew
+                                    two circles – one big and one smaller inside the big one. Everyone got a crab with a
+                                    number on its shell-house. Then they gathered some crabs and put them in the middle
+                                    of the small circle. The “owners” of the racing crabs were allowed to stand outside
+                                    the bigger circle and cheer for their crabs. Which crab crossed the line of the
+                                    small circle first, won and was qualified for the next round. Everything is free and
+                                    the locals were super friendly.</p>
+                            </div>
+
+                        </div>
+                        <div id="event4" class="item event">
+                            <div class="item column" style="background-image:url('./image/eid.jpg');">
+                                <div class="item-content ">
+                                    Eid
+                                </div>
+                                <i class=" bottomleft fa fa-trash-o deleteButton" style="font-size:20px;color:red"
+                                    onclick='deleteEvent(this.parentElement.parentElement.id)'></i>
+                                <span class=" bottomright moreButton"
+                                    style="font-size:50px;font-size:20px;color:rgb(20, 18, 18)"
+                                    onclick="openTab('b4');">&rarr;</span>
+                            </div>
+                            <div id="b4" class="containerTab" style="visibility:hidden;background:green">
+                                <span style="font-size: 200%;" onclick="this.parentElement.style.display='none'"
+                                    class="closebtn">&times;</span>
+                                <h2>Eid</h2>
+                                <p>Eid al-Fitr was originated by the Islamic prophet Muhammad. According to certain
+                                    traditions, these festivals were initiated in Medina after the migration of Muhammad
+                                    from Mecca. Anas, a well-known companion of the Prophet, narrated that, when the
+                                    Prophet arrived in Medina, he found people celebrating two specific days in which
+                                    they entertained themselves with recreation and merriment. At this, the Prophet
+                                    remarked that Almighty has fixed two days of festivity instead of these for you
+                                    which are better than these: Eid al-Fitr and Eid al-Adha</p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <hr size="8" width="100%" color="red">
+                        <table class="container-fluid" style="border:0px;">
+                            <tr>
+                                <td>
+                                    Enter event heading:
+                                </td>
+
+                                <td>
+                                    <input type="text" width="100" id="txtCellValue1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Enter event details:
+                                </td>
+
+                                <td>
+                                    <input type="text" width="100" id="txtCellValue2" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <button type="button" id="btnAddValueInGrid" class="btn btn-dark">Add new
+                                        event</button>
+
+                                </td>
+                            </tr>
+                            <br />
+
+                        </table>
+                    </div>
+                </div>
+
+                <button type="button" style="margin-left:50%" class="btn btn-primary">Confirm</button>
+            </div>
+
+            <script type="text/javascript">
+                const grid = new Muuri('.grid', {
+                    dragEnabled: true,
+                    dragAxis: 'xy'
+
+                });
+            </script>
+
+
+            <div class="form-main">
+                <!--Div for getting booking details-->
+                <h1 class="form-h1">Fill the following</h1>
+                <div class="form-div">
+                    <form name="formContact" onsubmit="return contact_validation()" action="home.html"
+                        class="form-align">
+                        <div class="add-padding">
+                            <div><label for="fname">First name</label></div>
+                            <div><input type="text" id="fname" name="fname" placeholder="first name" required><br><br>
+                            </div>
+                        </div>
+
+                        <div class="add-padding">
+                            <div><label for="lname">Last name</label></div>
+                            <div><input type="text" id="lname" name="lname" placeholder="last name" required><br><br>
+                            </div>
+                        </div>
+
+                        <div class="add-padding">
+                            <div><label for="email">Email</label></div>
+                            <div><input type="text" id="email" name="email" placeholder="xyz@gmail.com"
+                                    required><br><br></div>
+                        </div>
+
+                        <div class="add-padding">
+                            <div><label for="phnumber">Phone Number</label></div>
+                            <div><input type="tel" id="phnumber" name="phnumber" placeholder="1234567890"
+                                    pattern="^\d{10}$" required><br><br></div>
+                        </div>
+
+                        <div class="add-padding">
+                            <div><label for="lname">Adult</label>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input class="input-counter" type="text" value="1" />
+                                    <span class="plus">+</span>
+
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+                        <div class="add-padding">
+                            <div><label for="lname">Child</label>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input class="input-counter" type="text" value="1" />
+                                    <span class="plus">+</span>
+
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+                        <div class="add-padding" style="text-align: center;margin-left:50% "><input type="submit"
+                                name="submit" value="Book Now" style=" height: 40px; ">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+<footer>
+    <div class="address-social">
+        <div class="address">
+            <p>
+                <h3>Reach us</h3>
+                Dreamy Travel<br>
+                Division No. 18<br>
+                Saskatchewan<br>
+                SK S0J 2B0<br>
+                Canada<br>
+                <b>Call us today at </b><a href="tel:+14374659957">+14374659957</a><br>
+                <b>Or mail to </b><a href="mailto:+14374659957">healthrelated@gmail.com</a>
+            </p>
+        </div>
+        <div class="social">
+            <div class="social">
+                <div class="socialapps">
+                    <div class="apps">
+                        <div class="apps-sub">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="apps-sub subs">
+                            <span>Facebook</span>
+                        </div>
+                    </div>
+
+                    <div class="apps">
+                        <div class="apps-sub">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="apps-sub subs">
+                            <span>Youtube</span>
+                        </div>
+                    </div>
+
+                    <div class="apps">
+                        <div class="apps-sub">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="apps-sub subs">
+                            <span>Twitter</span>
+                        </div>
+                    </div>
+
+                    <div class="apps">
+                        <div class="apps-sub">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="apps-sub subs">
+                            <span>Instagram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+<div class="show-only-mobile row">
+    <div class="col-10">
+        <div class="link-home"><a class="header-a" href="./home.html">
+                <div class="fader white-color">
+                    <div class="font-awesome-div">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <span class="span-class-padding">Home</span>
+                </div>
+            </a></div>
+        <div class="link-home"><a class="header-a" href="./destinations.html">
+                <div class="fader white-color">
+                    <div class="font-awesome-div">
+                        <i class="fas fa-box-open white-color"></i>
+                    </div><span class="span-class-padding">Destination</span>
+                </div>
+            </a></div>
+        <div class="link-home"><a class="header-a" href="./packagecustomizer.html">
+                <div class="fader white-color">
+                    <div class="font-awesome-div">
+                        <i class="fas fa-box-open white-color"></i>
+                    </div><span class="span-class-padding">Package</span>
+                </div>
+            </a></div>
+        <div class="link-home"><a class="header-a" href="./adventure.html">
+                <div class="fader white-color">
+                    <div class="font-awesome-div">
+                        <i class="fas fa-suitcase-rolling white-color"></i>
+                    </div><span class="span-class-padding">Adventure</span>
+                </div>
+            </a></div>
+        <div class="link-home"><a class="header-a" href="./contact.html">
+                <div class="fader white-color">
+                    <div class="font-awesome-div">
+                        <i class="far fa-address-book"></i>
+                    </div><span class="span-class-padding">Contact</span>
+                </div>
+            </a></div>
+    </div>
+
+    <div class="close-btn col-2" onclick="clickCloseButton()">
+        <i class="fas fa-times"></i>
+    </div>
+</div>
+</body>
+
+</html>

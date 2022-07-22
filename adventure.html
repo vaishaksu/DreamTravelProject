@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adventure</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w.css">
+    <link rel="stylesheet" href="./css/packagecustomizerstyle.css">
+    <link rel="shortcut icon" type="image/jpg" href="./image/android-chrome-192x192.png" sizes="198x198" />
+    <script src="https://kit.fontawesome.com/dcd863c3d4.js" crossorigin="anonymous"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/dreamy-travels.js"></script>
+</head>
+
+<script>
+    if (window.innerWidth > 767) { // other than mobile view
+        window.onscroll = function () {
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        };
+    }
+</script>
+
+<body>
+    <div class="hide-show-class-div">
+
+        <div id="myHeader">
+            <div class="first">
+                <div class="first-image-logo">
+                    <img src="./image/logo.jpeg" alt="">
+                </div>
+                <div class="second">
+                    <ul class="third">
+                        <li><a class="header-a" href="./home.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <span>Home</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./packagecustomizer.html">
+                                <div class="fader white-color active">
+                                    <div>
+                                        <i class="fas fa-box-open white-color"></i>
+                                    </div><span>Package</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./adventure.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="fas fa-suitcase-rolling white-color"></i>
+                                    </div><span>Adventure</span>
+                                </div>
+                            </a></li>
+                        <li><a class="header-a" href="./contact.html">
+                                <div class="fader white-color">
+                                    <div>
+                                        <i class="far fa-address-book"></i>
+                                    </div><span>Contact</span>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="mobile-bars" onclick="hamburgerMobile()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            PLEASE MODIFY HERE
+            <div class="details">
+                <div class="rowDetails">
+                    <div class="example-1 card">
+                        <!-- <div class="row"> -->
+                        <div class="wrapper">
+                            <div class="row" style="height: 65%;">
+                                <div class="date">
+                                    <span class="day">Rajasthan</span>
+                                </div>
+                                <div id="slideshow">
+                                    <div>
+                                        <img class="book-image" src="./image/packageImages/red-fort.jpg">
+                                    </div>
+
+                                    <div>
+                                        <img class="book-image" src="./image/packageImages/jodhpur.jpg" />
+                                    </div>
+                                    <div>
+                                        <img class="book-image" src="./image/packageImages/pushkar.jpg" />
+                                    </div>
+                                    <div>
+                                        <img class="book-image" src="./image/packageImages/udaipur.jpg" />
+                                    </div>
+                                    <div>
+                                        <img class="book-image" src="./image/packageImages/jaipur.jpg" />
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="title"><u>Trip to Royalty of Rajasthan(Delhi to Delhi)</u></h1>
+
+                                        <div class="card-about">
+                                            <div class="item">
+                                                <span class="value"><span>&#9788;</span>15 Days</span>
+                                                <span class="value"><span>&#9789;</span>14 Nights</span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="value">14 Breakfasts</span>
+                                                <span class="value">14 Dinners</span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="value"><b><span>&#36;</span>1499/person</span></b>
+                                                <span class="label">*Costs Includes everything mentioned above</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <h2>Accommodations</h2>
+                                            <p>Hotels as per the location (12 nights), Camping tents (1 night), Sleeper
+                                                trains (1 night)</p>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <h2>Transportation</h2>
+                                            <p>Private vehicle, Train, Metro, Camel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="extraInformation">
+
+                                <div class="card-about">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <h1>Cities Visited</h1>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <ul style="padding-top: 50px;">
+                                                    <li>Delhi</li>
+                                                    <li>Jodhpur</li>
+                                                    <li>Udaipur</li>
+                                                    <li>Jojawar</li>
+                                                    <li>Pushkar</li>
+                                                    <li>Jaipur</li>
+                                                    <li>Ranthambore National Park</li>
+                                                    <li>Agra </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <h1>Adventures & Entertaining Activities</h1>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <ul style="padding-top: 50px;">
+                                                    <li>Hot air balloon Rides</li>
+                                                    <li>Paragliding</li>
+                                                    <li>Cycling</li>
+                                                    <li>Camping</li>
+                                                    <li>Wildlife Safari</li>
+                                                    <li>Camel Ride</li>
+                                                    <li>Visiting famous markets of listed cities</li>
+                                                    <li>Cultural Shows </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <h1>Attractions</h1>
+                                            </div>
+                                            <div class="flip-card-back attractions">
+                                                <ul>
+                                                    <li>Delhi - Qutub Minar, Red Fort, Jama Masjid.</li>
+                                                    <li>Jodhpur – Mehrangarh Fort, clock tower.</li>
+                                                    <li>Udaipur – Lake Pichula, Gangaur Ghat, Monsoon Palace.</li>
+
+                                                    <li>Pushkar – 14th- Century Brahma Temple, Savitri Temple.</li>
+                                                    <li>Jaipur(The Pink City) – Raj Mandir Cinema, Hawa Mahal.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            div class="details">
+            <div class="rowDetails">
+                <div class="example-1 card">
+                    <!-- <div class="row"> -->
+                    <div class="wrapper">
+                        <div class="row" style="height: 65%;">
+                            <div class="date">
+                                <span class="day">Florida</span>
+                            </div>
+                            <div id="slideshow2">
+                                <div>
+                                    <img class="book-image" src="./image/packageImages/1_micky.jpg">
+                                </div>
+                                <div>
+                                    <img class="book-image" src="./image/packageImages/2.jpg" />
+                                </div>
+                                <div>
+                                    <img class="book-image" src="./image/packageImages/3.jpg" />
+                                </div>
+                                <div>
+                                    inner<img class="book-image" src="./image/packageImages/4.jpg" />
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="content">
+                                    <h1 class="title"><u>A trip to Walt Disney World Resort</u></h1>
+                                    <div class="card-about">
+                                        <div class="item">
+                                            <span class="value"><span>&#9788;</span>4 Days</span>
+                                            <span class="value"><span>&#9789;</span>3 Nights</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="value">4 Breakfasts</span>
+                                            <span class="value">4 Dinners</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="value"><b><span>&#36;</span>2599/person</span></b>
+                                            <span class="label">*Costs Includes everything mentioned above</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2>Offers</h2>
+                                        <ul>
+                                            <li>Pay for 3 members and get 20% off on your total package fees</li>
+                                            <li>Free transportation from hotels to different destinations in Disney’s
+                                                world</li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2>Transportation</h2>
+                                        <p>Free transportation from hotels to different destinations in Disney’s world
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="extraInformation">
+
+                            <div class="card-about">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <h1>Places to stay</h1>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <ul>
+                                                <li>Disney’s Pop Century Resort</li>
+                                                <li>Disney’s Animal Kingdom Lodge</li>
+                                                <li>Disney’s Saratoga Spring Resort & Spa</li>
+                                                <li>Disney’s Port Orleans Resort- Riverside </li>
+                                                <li>Disney’s Polynesian Village Resort </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <h1>Adventures & Entertaining Activities</h1>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <ul>
+                                                <li>Numerous thrilling rides </li>
+                                                <li>Water park Rides
+                                                <li>
+                                                <li>Camping close to the pool areas, theme park</li>
+                                                <li>Disney Skylier</li>
+                                                <li>Ski Patrol Training camp</li>
+                                                <li>Disney’s Animal kingdom Entertainment</li>
+                                                <li>Live Epcot Pianist</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <h1>Attractions</h1>
+                                        </div>
+                                        <div class="flip-card-back attractions">
+                                            <ul>
+
+                                                <li>Magic Kingdom </li>
+                                                <li>Epcot </li>
+                                                <li>Disney’s Hollywood Studios </li>
+                                                <li>Disney’s Animal Kingdom </li>
+                                                <li>Disney’s Blizzard Beach </li>
+                                                <li>Disney’s Typhoon Lagoon </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="show-only-mobile row">
+        <div class="col-10">
+            <div class="link-home"><a class="header-a" href="./home.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span class="span-class-padding">Home</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./destinations.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-box-open white-color"></i>
+                        </div><span class="span-class-padding">Destination</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./packagecustomizer.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-box-open white-color"></i>
+                        </div><span class="span-class-padding">Package</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./adventure.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="fas fa-suitcase-rolling white-color"></i>
+                        </div><span class="span-class-padding">Adventure</span>
+                    </div>
+                </a></div>
+            <div class="link-home"><a class="header-a" href="./contact.html">
+                    <div class="fader white-color">
+                        <div class="font-awesome-div">
+                            <i class="far fa-address-book"></i>
+                        </div><span class="span-class-padding">Contact</span>
+                    </div>
+                </a></div>
+        </div>
+
+        <div class="close-btn col-2" onclick="clickCloseButton()">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <footer>
+        <div class="address-social">
+            <div class="address">
+                <p>
+                    <h3>Reach us</h3>
+                    Dreamy Travel<br>
+                    Division No. 18<br>
+                    Saskatchewan<br>
+                    SK S0J 2B0<br>
+                    Canada<br>
+                    <b>Call us today at </b><a href="tel:+14374659957">+14374659957</a><br>
+                    <b>Or mail to </b><a href="mailto:+14374659957">healthrelated@gmail.com</a>
+                </p>
+            </div>
+                                <div class="social">
+                        <div class="socialapps">
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-facebook"></i> 
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Facebook</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Youtube</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-twitter"></i> 
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Twitter</span>
+                                </div>
+                            </div>
+
+                            <div class="apps">
+                                <div class="apps-sub">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="apps-sub subs">
+                                    <span>Instagram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

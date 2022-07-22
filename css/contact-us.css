@@ -1,0 +1,451 @@
+body {
+    margin-right: 0;
+}
+
+.first img{
+    height: 80px;
+    width: 80px;
+    border-color: black;
+    border-radius: 50%;
+}
+
+
+.first{
+    display:flex;
+    justify-content: space-between;
+    background-color:white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color .5s ease;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.second {
+    margin-right: 15px;
+}
+
+.destination-name {
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.header-a {
+    color: white;
+    text-decoration: none;
+}
+
+.second li{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+
+}
+.image{
+    display: flex;
+   
+}
+
+#quote{
+    text-align: center;
+    font-family: cursive;
+    margin-left: 35px;
+    background: -o-repeating-linear-gradient();
+}
+
+
+#trend{
+    text-align: center;
+    font-family: cursive;
+   
+    position: relative;
+    font-size: 3em;
+    margin: 1;
+    font-weight: 600;
+    color:#000;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#trend span{
+    color: #ff022c;
+}
+
+.des{
+    margin-left: 15px;
+}
+
+
+.round{
+    margin-top: 90px;
+    margin-right: 15px;
+}
+.round1{
+    display: flex;
+    margin-top: 30px; 
+}
+
+.naslova-class {
+    height: 100%;
+}
+
+.rows{
+    
+    margin-top: 80px;
+    
+    
+}
+#book{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 40px;
+    color: black;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color:#a5d6a7;
+    margin-right: 15px;
+    /* width: 46%; */
+}
+
+
+
+
+/*footer*/
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:#333;;
+    font-family: 'Sofia';
+    margin-top: 50px;
+    color: white;
+    display: flex;
+}
+
+footer p {
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+.socialapps {
+    text-align: left;
+    margin-top: 70px;
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+
+.socialapps img {
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+}
+
+.address-social {
+    display: flex;
+    float: bottom;
+    width: 50%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.address-footer {
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.social.img{
+    display: inline-block;
+}
+
+.fifth {
+    display: flex;
+    list-style: none;
+       
+}
+    
+.fifth li{
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.ds-flex {
+    display: flex;
+    padding-top: 7px;
+}
+
+.add-padding {
+    padding-left: 15px;
+}
+
+.expand-collpase {
+    height: 40px;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.expand-collpase p {
+    margin: 0;
+}
+
+.div-abv-collapse {
+    margin-top: 15px;
+}
+
+.form-destination {
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-form-style {
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0;
+    border-radius: 0px;
+    outline: none;
+}
+
+.form-control-valid {
+display: block;
+width: 100%;
+height: calc(1.5em + .75rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+transition: border-color .15s ease-in-out,
+box-shadow .15s ease-in-out;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0;
+    border-radius: 0px;
+    outline: none;
+}
+
+.size-button {
+    background: #F7C02C;
+    color: #fff;
+    font-weight: 400;
+    transition: .5s ease;
+    border: 2px solid #F7C02C;
+    border-radius: 0px;
+    font-size: 14px;
+    padding: .35rem 0.55rem;
+}
+
+.form-input {
+    padding-left: 15px;
+    font-size: 22px;
+    text-align: right;
+    color: chocolate;
+    font-weight: bold;
+}
+
+.third {
+    text-align: center;
+}
+
+.border-color-home {
+    background: #2d2383;
+    padding: 20px 0;
+}
+
+.white-color:hover {
+    color: yellow;
+}
+
+.white-color .fas, .far {
+    font-size: 20px;
+}
+
+.adjust{
+    margin-top: 90px;
+}
+
+.form-h1{
+    font-size: 35px;
+    text-align: center;
+    color: darkviolet;
+    padding-top: 20px;
+}
+
+.add-padding {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    color: darkred;
+}
+
+.form-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    
+}
+
+.form-main{
+    background-color: darkgrey;
+    margin-bottom: -40px;
+}
+
+.form-input label{
+    font-size: 22px;
+    text-align: right;
+    color: chocolate;
+    font-weight: bold;
+}
+
+.locations{
+    display: flex;    
+}
+
+.locations-address{
+    margin-left: 20px;
+    width: 100%;
+}
+
+.about-us p{
+    padding: 0px 20px 0px 20px;
+    text-align: justify;
+}
+
+.about-us h1{
+    font-size: 25px;
+    color:#ff022c;
+    padding-left: 20px;
+}
+
+.locations-division{
+    display: flex;
+}
+
+
+
+
+/* mobile viewport */
+@media only screen and (max-width: 600px) and (min-width: 1px){
+    body {
+      background-color: lightblue;
+    }
+    .locations{
+        display: inline;
+    }
+    .address{
+        float: right;
+        margin: 115px 0px 0px 10px;
+    }
+    .mapouter{
+        float: left;
+        margin-left: 20px;
+    }
+    .locations-address{
+        display: inline;
+        
+    }
+    .contact-details{
+        padding: 190px 0px 0px 20px;
+    }
+    .locations-division{
+        display: inline;
+    }
+
+    .mapouter{
+        height:100px;
+        width:100px;
+    }
+    .gmap_canvas {
+        height:100px;
+        width:100px;    
+    }
+
+
+
+
+    /*Footer*/
+    footer{
+        display:inline;
+    }
+    
+    footer p {
+        padding-left: 10px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        text-align: justify;
+        
+    }
+    .address-social {
+        display: inline;
+    }
+    
+    .socialapps {
+        text-align: left;
+        margin-top: 40px;
+        float: inherit;
+        width: 100%;
+        display: inline;
+        padding-bottom: 10px;
+    }
+    
+    
+  }
+
+
+
+  /* tablet viewport */
+@media only screen and (max-width: 768px) and (min-width: 601px){
+    body {
+      background-color:azure;
+    }
+    .locations-division{
+        display: inline;
+    }
+    .socialapps{
+        margin: 30px 10px 30px 10px;
+    }
+    .address-footer{
+        padding-left: 20px;
+    }
+    .socialapps{
+        padding-top: 50px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+/* .container-class {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+
+
+

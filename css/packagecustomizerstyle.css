@@ -1,0 +1,216 @@
+.packageOffered {
+  background-color: lightgrey;
+  width: auto;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.packageOfferedDescription{
+
+  background-color: lightgrey;
+  width: auto;
+  border: 2px solid rgb(128, 30, 0);
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.grid {
+  position: relative;
+
+  
+}
+.item {
+  display: block;
+  position: absolute;
+  width: 100%;
+  min-height: 50px;
+  margin: 5px;
+  margin-right: 90%;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  color: #555;
+  
+}
+.my-custom-content {
+  height: 200px;
+}
+.event.muuri-item-dragging{
+  z-index: 3;
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  opacity: 50%;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(35, 17, 56);
+  font-size: large;
+  font-weight:1000;
+
+}
+
+.event{
+  margin-bottom: 2px;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: auto;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  
+}
+
+.containerTab {
+  padding: 30px;
+  color: white;
+  margin-left: 20%;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/*Arrow icon*/
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  
+}
+/*Delete arrow*/
+.bottomleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  
+}
+
+/*Event heading*/
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+  }
+/*test*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/*Message box hover icon
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 70%;
+
+  /* Position the tooltip 
+  position: absolute;
+  
+}
+
+.tooltip:hover .deleteIconMessage {
+  visibility: visible;
+}
+
+.tooltip:hover .moreIconMessage {
+  visibility: visible;
+}
+*/
+table, th, td {
+  border: 1px solid black;
+}
+
+
+/*input count*/
+span {cursor:pointer; }
+		.number{
+			margin:100px;
+      margin-top: 0px;
+      margin-bottom: 9px;
+		}
+		.minus, .plus{
+			width:20px;
+			height:30px;
+			background:#f2f2f2;
+			border-radius:4px;
+			padding:8px 5px 8px 5px;
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		.input-counter{
+			height:34px;
+      width: 100px;
+      text-align: center;
+      font-size: 26px;
+			border:1px solid #ddd;
+			border-radius:4px;
+      
+      vertical-align: middle;
+    }
+
